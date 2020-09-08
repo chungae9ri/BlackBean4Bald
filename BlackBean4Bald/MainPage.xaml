@@ -10,16 +10,22 @@
     >
 
     <Grid>
-        <NavigationView x:Name="NavView" AlwaysShowHeader="False" IsBackButtonVisible="Collapsed" IsSettingsVisible="False">
+        <NavigationView x:Name="NavView" AlwaysShowHeader="False" IsBackButtonVisible="Collapsed" IsSettingsVisible="False"
+                         Loaded="NavView_Loaded"
+                         ItemInvoked="NavView_ItemInvoked"
+                         BackRequested="NavView_BackRequested">
             <NavigationView.MenuItems >
-                <NavigationViewItem Tag="JobStation" Content="Job Station"/>
-                <NavigationViewItem Tag="Presets" Content="Presets"/>
-                <NavigationViewItem Tag="Item3" Content="Item3"/>
-                <NavigationViewItem Tag="Item4" Content="Item4"/>
-                <NavigationViewItem Tag="Item5" Content="Item5"/>
-                <NavigationViewItem Tag="Item6" Content="Item6"/>
+                <NavigationViewItem Tag="JobStation" Icon="audio" Content="Job Station"/>
+                <NavigationViewItem Tag="Presets" Icon="page" Content="Presets"/>
+                <NavigationViewItem Tag="Item3" Icon="mail" Content="Item3"/>
+                <NavigationViewItem Tag="Item4" Icon="calculator" Content="Item4"/>
+                <NavigationViewItem Tag="Item5" Icon="clock" Content="Item5"/>
+                <NavigationViewItem Tag="Item6" Icon="Keyboard" Content="Item6"/>
             </NavigationView.MenuItems>
-
+            <ScrollViewer>
+                <Frame x:Name="ContentFrame" Padding="12,0,12,24" IsTabStop="True"
+                   NavigationFailed="ContentFrame_NavigationFailed"/>
+            </ScrollViewer>
         </NavigationView>
     </Grid>
 </Page>
