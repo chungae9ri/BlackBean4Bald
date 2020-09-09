@@ -14,13 +14,13 @@
                          Loaded="NavView_Loaded"
                          ItemInvoked="NavView_ItemInvoked"
                          BackRequested="NavView_BackRequested">
-            <NavigationView.MenuItems >
+            <NavigationView.MenuItems>
                 <NavigationViewItem Tag="JobStation" Icon="audio" Content="Job Station"/>
                 <NavigationViewItem Tag="Presets" Icon="page" Content="Presets"/>
-                <NavigationViewItem Tag="Item3" Icon="mail" Content="Item3"/>
-                <NavigationViewItem Tag="Item4" Icon="calculator" Content="Item4"/>
-                <NavigationViewItem Tag="Item5" Icon="clock" Content="Item5"/>
-                <NavigationViewItem Tag="Item6" Icon="Keyboard" Content="Item6"/>
+                <NavigationViewItem Tag="Media" Icon="mail" Content="Media"/>
+                <NavigationViewItem Tag="Curves" Icon="calculator" Content="Curves"/>
+                <NavigationViewItem Tag="Setup" Icon="clock" Content="Setup"/>
+                <NavigationViewItem Tag="Settings" Icon="Keyboard" Content="Settings"/>
             </NavigationView.MenuItems>
             <ScrollViewer>
                 <Frame x:Name="ContentFrame" Padding="12,0,12,24" IsTabStop="True"

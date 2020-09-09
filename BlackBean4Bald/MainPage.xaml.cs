@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using BlackBean4Bald.Pages;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -47,10 +48,10 @@ namespace BlackBean4Bald
            
             ("JobStation", typeof(JobStationPage)),
             ("Presets", typeof(PresetsPage)),
-            ("Item3", typeof(JobStationPage)),
-            ("Item4", typeof(JobStationPage)),
-            ("Item5", typeof(JobStationPage)),
-            ("Item6", typeof(JobStationPage)),
+            ("Media", typeof(MediaPage)),
+            ("Curves", typeof(CurvesPage)),
+            ("Setup", typeof(SetupPage)),
+            ("Settings", typeof(SettingsPage)),
             
         };
 
